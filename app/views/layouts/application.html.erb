@@ -26,7 +26,7 @@
   <div id="head">
     <div id="head-content">
         <div id="title">
-            <h1><%= link_to "Agnok's Site of Forums", root_path %></h1>
+            <h1><%= link_to "UChicago@MLH", root_path %></h1>
         </div>
 
 
@@ -39,24 +39,26 @@
         <% end %>
 
         <div id="admin">
-            <%= link_to "Admin", "/admin_panels" %>
+           <%= link_to "Admin", "/admin_panels" %>
         </div>
 
         <div id="login">
-            <%= link_to "Log In", new_session_path %>
+           <%= link_to "Log In", new_session_path %>
         </div>
         <div id="register">
-            <%= link_to "Register", new_user_path %>
+           <%= link_to "Register", new_user_path %>
         </div>
         <div id="logout">
-            <%= link_to "Log Out", "/log_out" %>
+           <%= link_to "Log Out", "/log_out" %>
         </div>
     </div>
   </div>
 
-  <div id="body">
-    <div id="body-content">
-        <%= yield %>
+  <div id="body-wrapper">
+    <div id="body">
+      <div id="body-content">
+          <%= yield %>
+      </div>
     </div>
   </div>
 
